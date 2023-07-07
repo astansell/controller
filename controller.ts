@@ -7,32 +7,34 @@ namespace Kitronik_Game_Controller {
 	/**
 	*:GAME Controller Standard Buttons
 	*/
-	export enum ControllerButtons {
-	    Up,
-	    Down,
-	    Left,
-	    Right,
-	    Fire1,
-	    Fire2
-	}
+    export enum ControllerButtons {
+        Up,
+        Down,
+        Left,
+        Right,
+        P12,
+        P16
+    }
+
 
     /**
-    *:GAME Controller Button Pins
+    * Controller Button Pins
     */
     export enum ControllerButtonPins {
-        //% block="Joypad Up (P8)"
-        Up = DAL.MICROBIT_ID_IO_P8,
-        //% block="Joypad Down (P14)"
-        Down = DAL.MICROBIT_ID_IO_P14,
-        //% block="Joypad Left (P12)"
-        Left = DAL.MICROBIT_ID_IO_P12,
-        //% block="Joypad Right (P13)"
-        Right = DAL.MICROBIT_ID_IO_P13,
-        //% block="Fire 1 (P15)"
-        Fire1 = DAL.MICROBIT_ID_IO_P15,
-        //% block="Fire 2 (P16)"
-        Fire2 = DAL.MICROBIT_ID_IO_P16
+        //% block="Down (P8)"
+        Down = DAL.MICROBIT_ID_IO_P8,
+        //% block="Up (P0)"
+        Up = DAL.MICROBIT_ID_IO_P0,
+        //% block="P12 (P12)"
+        P12 = DAL.MICROBIT_ID_IO_P12,
+        //% block="Right (P2)"
+        Right = DAL.MICROBIT_ID_IO_P2,
+        //% block="Left (P1)"
+        Left = DAL.MICROBIT_ID_IO_P1,
+        //% block="P16 (P16)"
+        P16 = DAL.MICROBIT_ID_IO_P16
     }
+
 
     /**
     *:GAME Controller Button Events
