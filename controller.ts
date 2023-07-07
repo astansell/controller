@@ -55,29 +55,6 @@ namespace Kitronik_Game_Controller {
     }
 
     /**
-     * Run vibration motor for a particular length of time
-     * @param run_time is the length of time the motor will run in ms, eg: 100
-     */
-    //% group=Feedback
-    //% blockId="kitronik_controller_run_motor" block="Run motor for %run_time|ms" icon="\uf080"
-    //% weight=92 blockGap=8
-    export function runMotor(run_time: number): void {
-        pins.digitalWritePin(DigitalPin.P1, 1)
-        basic.pause(run_time)
-        pins.digitalWritePin(DigitalPin.P1, 0)
-    }
-
-    /**
-     * Setup micro:bit to play music through :GAME Controller buzzer
-     */
-    //% group=Feedback
-    //% blockId="kitronik_controller_buzzer_setup" block="set pitch pin to buzzer" icon="\uf080"
-    //% weight=91 blockGap=8
-    export function setBuzzerPin(): void {
-        pins.analogSetPitchPin(AnalogPin.P2)
-    }
-
-    /**
      * Determines if a :GAME Controller button is pressed
      * @param button press to be checked
      */
